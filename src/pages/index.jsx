@@ -20,22 +20,22 @@ export default function contador() {
     fontFamily: "Arial",
   };
 
-  const [add, adicionar] = useState(0);
+  const [num, setNum] = useState(0);
 
   function addClick() {
     console.log("Clique adicionar");
-    adicionar(add + 1);
+    setNum(num + 1);
   }
 
-  function lessClick() {
+  function removeClick() {
     console.log("Clique remover!");
-    adicionar(add - 1);
+    setNum(num - 1);
   }
 
   return (
     <div style={bodyStyle}>
       <div>
-        <span style={textStyle}>{add}</span>
+        <span style={textStyle}>{num}</span>
       </div>
 
       <div style={estilo}>
@@ -44,7 +44,7 @@ export default function contador() {
         </div>
 
         <div>
-          <BotaoMenos funcao={lessClick} />
+          <BotaoMenos funcao={removeClick} />
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 export default function BotaoAdd(props) {
   return (
     <div>
-      <button onClick={props.funcao}
+      <button
+        onClick={props.funcao}
         style={{
           backgroundColor: "#2cc9ff",
           fontSize: "30px",
@@ -9,7 +10,6 @@ export default function BotaoAdd(props) {
           width: "100px",
           border: "none",
           borderRadius: "10px",
-
         }}
       >
         +
